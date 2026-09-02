@@ -1,0 +1,8 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local env files (if added later)
+.env
+.env.local

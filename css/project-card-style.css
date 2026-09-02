@@ -1,0 +1,101 @@
+/* Reusable Project Card */
+.project-card {
+    background: var(--color-bg-soft);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-accent-1);
+}
+
+.project-card-cover {
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    color: rgba(255, 255, 255, 0.85);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.project-card-cover i {
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.35));
+}
+
+.project-content {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.project-category {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-accent-1);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.project-description {
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 18px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.project-tag {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--color-border);
+}
+
+.project-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-strong);
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.project-link:hover {
+    border-color: var(--color-accent-1);
+    color: var(--color-accent-1);
+}

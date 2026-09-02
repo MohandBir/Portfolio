@@ -1,0 +1,100 @@
+@import url("general-style.css");
+@import url("header-style.css");
+@import url("about-style.css");
+@import url("project-card-style.css");
+@import url("contact-style.css");
+@import url("footer-style.css");
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px 100px;
+    min-height: 80vh;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--color-accent-1);
+}
+
+.hero-title {
+    color: white;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    padding: 20px 0;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 18px;
+    padding-bottom: 30px;
+    line-height: 1.5;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.hero-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+/* Featured Projects (home) */
+.featured-projects-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.projects-more {
+    text-align: center;
+}
+
+@media (min-width: 769px) {
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-skills {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .featured-projects-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .hero-title {
+        font-size: 58px;
+    }
+
+    .featured-projects-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
